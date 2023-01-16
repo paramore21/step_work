@@ -1,0 +1,59 @@
+/* @keyframes example {
+  from {
+      background-color: red;
+      box-shadow: 5px 5px chartreuse;
+}
+  25% {background-color: aqua;}
+  50% {background-color: burlywood;
+    transform: translate(55px);}
+  75% {background-color: chartreuse;}
+  to {
+        background-color: red;
+        box-shadow: 9px 9px burlywood;
+        transform: translate(0px);
+    }
+}
+.div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: example 4s infinite ease-in-out;
+} */
+
+/* @keyframes example {
+    from {
+        transform: rotate(270deg);
+  }
+   55% { 
+        transform: rotate(0deg);
+   }
+    to {
+        transform: rotate(360deg);
+      }
+  } */
+
+  @keyframes example {
+    from   {left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    50%  { left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    to { left:0px; top:-110px;}
+  }
+  /* .div {
+      width: 100px;
+      height: 100px;
+      display: flex;
+    
+    } */
+    
+    /* .div:hover  {
+        animation: example 2s ease-in-out;
+        animation-delay: 2s;
+  } */
+    .div {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+        animation: example 4s infinite ease-in-out;
+    }
